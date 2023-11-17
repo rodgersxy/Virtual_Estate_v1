@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>virtual estate</title>
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      
+        <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
+      </head>
+      
+<body>
+
+<!-- Navbar -->
+<div class="navbar navbar-expand-lg navbar-dark bg-dark"><a
+    class="navbar-brand" href="/">Virtual Estate</a> <button class="navbar-toggler" type="button" data-toggle="collapse"
+     data-target="#navbarSupportedContent"
+     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav justify-content-center mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/realtors">Realtors</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Properties
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/properties/commercial">Commercial</a>
+              <a class="dropdown-item" href="/properties/land">Land</a>
+              <a class="dropdown-item" href="/properties/villas">Villas</a>
+              <a class="dropdown-item" href="/properties/residential">Residential</a>
+              <a class="dropdown-item" href="/properties/industrial">Industrial</a>
+              <a class="dropdown-item" href="/properties/apartments">Apartments</a>
+              <a class="dropdown-item" href="/properties/other">Office</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sale or Rent
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/properties/sale">On Sale</a>
+              <a class="dropdown-item" href="/properties/rent">Rentals</a>
+            </div>
+          </li>
+          
+        <li>
+          <a class="nav-link" href="/about">About us</a>
+        </li>
+        
+       
+        <li>
+          <a class="nav-link" href="/register">Blog</a>
+        </li>
+      </ul>
+    <a class="btn btn-outline-primary" href="/accounts/google/login">Login with Google</a>
+</div>
+</div>
+
+<!-- Your page content goes here -->
+
+<!-- Include Bootstrap JS (You can change the URL if you're using a CDN) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
