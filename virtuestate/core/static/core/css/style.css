@@ -78,3 +78,24 @@ body, html
     text-decoration: none; /* Remove any underline from the text */
     text-transform: uppercase;
   }
+
+  /* Center the notification button */
+#loginNotification {
+ 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+
+/* Resize the notification button */
+#loginNotification .btn-outline-primary {
+    font-size: 14px; /* Adjust the font size as needed */
+    padding: 5px 10px; /* Adjust the padding as needed */
+}
