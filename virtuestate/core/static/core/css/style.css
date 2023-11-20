@@ -99,3 +99,11 @@ body, html
     font-size: 14px; /* Adjust the font size as needed */
     padding: 5px 10px; /* Adjust the padding as needed */
 }
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix a {
+  margin: 0 12px;
+}
